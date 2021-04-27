@@ -6,6 +6,7 @@
 /* class selector preceded by . 
 id selector preceded by # */
 
+
 body {
     background-color:#dae3f1;
     margin: 0;
@@ -15,30 +16,29 @@ header {
     background-color:#315181;
     display: flex;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 275px;
     width: 100%;
 }
 
 /*flex help for header from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
-header #name {
+header h1 {
     display: inline-flex;
     background-color: darkgray;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     padding: 10px 10px 10px 60px;
 }
 
+
 header nav {
-    float: right;
     display: inline-flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
 }
 
 header nav ul li {
     display: inline-flex;
     font-weight: bold;
     font-size: 20px;
+    justify-content: flex-end;
 }
 
 header nav ul li a {
@@ -50,12 +50,18 @@ a {
     color: black;
 }
 
-header img{
+.hero {
+    height:250px;
+    background-image: url(images/herobg.jpg);
+    background-size: 100% 100%;
+}
+
+/*
+#hero {
+    height: 250px;
+    background-image:url(images/herobg.jpg);
     height: 200px;
-    width:100%;
-    padding: 0;
-    margin: 0;
-    position:relative;
+    width: 100%;
 }
 
 
@@ -88,6 +94,9 @@ header img{
     padding: 20px;
 }
 
+.info h1 {
+    text-align: center;
+}
 
 .right nav ul li {
     display: inline-flex;
