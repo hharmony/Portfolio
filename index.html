@@ -3,69 +3,76 @@
 <head>
     <meta charset="UTF-8" />
     <title>Harmony's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header>
         <!-- name on left with photo--> 
         <!--nav list on right-->
+        <div>
         <h1>Harmony</h1>
-        <img src="images/harmony.png" />
 
         <nav>
             <ul>
                 <li>
-                    About Me 
+                    <a href="#about">About Me</a>
                 </li>
                 <li>
-                    Work
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    Contact Me
+                    <a href="#contact">Contact Me</a>
                 </li>
                 <li>
-                    Resume
+                    <a href="#">Resume</a>
                 </li>
             </ul>
         </nav>
+        <section class="hero">
+            <!--hero image with subtitle-->
+            <!--hero source image url - https://imgur.com/t/backgrounds/rfW4Y-->
+            <img src="images/herobg.jpg" />
+            <!--<h2>Harmony's Portfolio</h2>-->
+        </section>
+        </div>
     </header>
-    <section class="hero">
-        <!--hero image with subtitle-->
-        <!--hero source image url - https://imgur.com/t/backgrounds/rfW4Y-->
-        <img src="images/herobg.jpg" />
-    </section>
+
 
     <section class="content">
     <!--content section - about, work-->
-        <section class="about">
-            About Me
-        </section>
+        <div id="about" class="about">
+            <h1>About Me</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus labore sequi soluta architecto recusandae repellat animi dolor assumenda quam fuga voluptatum consequatur fugiat ad suscipit veniam itaque voluptate, asperiores impedit.</p>
+        </div>
 
-        <section class="work">
-            Work
-        </section>
+        <div id="work" class="work">
+            <h1>Work</h1>
+            <div>Project1</div>
+            <div>Project2</div>
+            <div>Project3</div>
+            <div>Project4</div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <nav>
+                <ul>
+                    <li>
+                        999-999-9999
+                    </li>
+                    <li>
+                        email@email.com
+                    </li>
+                    <li>
+                    Github
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
     <footer>
-        <!--similar to header-->
-        <!--contact section - contact me on left, nav links on right-->
-        <!--tel#, email, github-->
-        <section class="contact">
-            Contact Me
-        </section>
-        <nav>
-            <ul>
-                <li>
-                    999-999-9999
-                </li>
-                <li>
-                    email@email.com
-                </li>
-                <li>
-                    Github
-                </li>
-            </ul>
-        </nav>
+
     </footer>
 </body>

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+} 
+
+body {
+    background-color:#dae3f1;
+    margin: 0;
+}
+
+header {
+    background-color:#315181;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 275px;
+}
+
+/*flex help for header from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+header h1 {
+    display: inline-flex;
+    background-color: darkgray;
+    margin: 10px 0 0 0;
+    padding: 10px 10px 10px 60px;
+}
+header nav {
+    float: right;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    margin: 10px 20px 10px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+header div {
+    width: 100%;
+    
+}
+header .hero img{
+    height: 200px;
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+.about, .work, .contact {
+    margin: 20px;
+    display: flex;
+}
+
+
+
+.content nav ul li {
+    display: inline;
+    margin: 20px;
+    float: right;
+    display: inline;
+}
