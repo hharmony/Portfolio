@@ -16,7 +16,6 @@ header {
     background-color:#315181;
     display: flex;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
 }
 
 /*flex help for header from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -28,26 +27,42 @@ header h1 {
     padding: 10px 10px 10px 60px;
 }
 
-
 header nav {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display:inline-flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
-    display: inline-flex;
-    font-weight: bold;
-    font-size: 20px;
-    justify-content: flex-end;
+    list-style: none;
+    display:inline-flex;
 }
 
 header nav ul li a {
     margin: 10px 20px 10px 20px;
+    font-weight: bolder;
+    font-size: 20px;
 }
+
+/*
+header nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    display: inline-flex;
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+
+*/
 
 a {
     text-decoration: none;
     color: black;
+    border-bottom: 3px solid black;
 }
 
 .hero {
@@ -77,31 +92,36 @@ a {
     padding: 20px;
 }
 
+#about, #work, #contact {
+    padding: 10px 0;
+}
+
 .left {
     display:inline-flex;
     float: left;
-    width: 25%;
+    width: 20%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
+    padding:0 20px;
+    justify-content:flex-end;
 }
 
 .right {
     display: inline-flex;
     float: left;
     flex-direction: column;
-    width: 75%;
+    width: 80%;
     border-left: 3px solid #315181;
-    padding: 20px;
-}
-
-.info h1 {
-    text-align: center;
+    padding: 0 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .right nav ul li {
     display: inline-flex;
     margin: 10px 20px 10px 0px;
+    font-weight: bolder;
+    font-size: 20px;
 }
+
 
 
 
