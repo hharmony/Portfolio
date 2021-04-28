@@ -16,6 +16,7 @@ header {
     background-color:#315181;
     display: flex;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
 }
 
 /*flex help for header from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
