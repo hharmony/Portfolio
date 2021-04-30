@@ -64,10 +64,13 @@ a {
     display:inline;
     float: left;
     width: 250px;
-    margin: 0 20px;
+    margin: 0 20px 0 0;
     border: 3px solid black;
 }
-
+#paragraphs {
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /* info using grid */
 /* resources used: 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
@@ -121,6 +124,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/*/
 #projects {
     display:flex;
     flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
     gap: 10px;
     justify-content: space-between;
     margin: 0 20px;
@@ -150,26 +154,27 @@ https://css-tricks.com/snippets/css/complete-guide-grid/*/
 
 
 /*contact me*/
-.right nav ul {
-    margin: 20px 0;
+
+#contactinfo nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-between;
 }
 
-.right nav ul li {
-    display: inline-flex;
-    justify-content: space-around;
-}
-.right nav ul li a{
+#contactinfo nav ul li a{
     margin: 0 20px;
     padding: 0 10px;
-    font-weight: bolder;
+    font-weight:bolder;
     font-size: 20px;
 }
 
+
+
 /* style change */
 
-
-
-
+#projects div:hover {
+    opacity:0.5;
+}
 
 
 
